@@ -7,4 +7,20 @@ def calcFib(n):
     elif n==2:
         return 1
     else:
-        return Fibonacci(n-1)+Fibonacci(n-2)
+        return calcFib(n-1)+calcFib(n-2)
+
+def calcFactorial(b):
+    fact = 1
+    for i in range(1, b + 1):
+        fact = fact * i
+
+    return fact
+
+def main():
+    result = calcFib(3)
+    print(result)
+    result2 = calcFactorial(5)
+    print(result2)
+
+main()
+
